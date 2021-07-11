@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- You have to make your own key in responsivevoice.org -->
+  
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=UZXDfLFP"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    font-size: 15pt;
+    }
+    #mac{
+    outline: none;
+    background-color: lightblue;
+    border-radius: 7px;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    width: 190px;
+    }
+    #btn{
+    position: absolute;
+    left: 75px;
+    width: 190px;
+    top: 320px;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+<textarea id="mac" colspan="50" rows="10"></textarea>
+<button onclick="val()" id="btn">Speak</button>
+
+  <script src="main.js"></script>
+</body>
+<script>
+  
+  function val(){
+  var text = document.getElementById("mac").value;
+  responsiveVoice.speak(text);
+  }
+  
+  
+  
+</script>
+</html>
