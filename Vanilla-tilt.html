@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Vanilla-tilt.js</title>
+  <style>
+      body{
+  background-color: #D63fe4;
+}
+.tilt{
+  display: flex;
+  width: 600px;
+  height: 600px;
+  background-image: linear-gradient(#b92b27, #156ed8);
+  margin:auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  bottom: auto;
+  top: auto;
+  box-shadow: 0px 0px 9px #46474d;
+  z-index: 6;
+  
+  
+  
+  
+}
+.whole{
+  height:640px;
+  width: 640px;
+  top: 20vh;
+  position: absolute;
+  background: #c4e4e5;
+  margin: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 7px;
+  box-shadow: 0px 3px 5px #705a72;
+}
+p{
+  z-index: 5;
+  color: #feffff;
+  font-size: 3.5rem;
+}
+
+
+
+
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="whole">
+  <div class="tilt" data-tilt data-tilt-max="30" data-tilt-speed="900" data-tilt-perspective="900"><p>Vanilla-tilt.js</p>
+    
+  </div>
+</div>
+  <script src="main.js"></script>
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+</html>
